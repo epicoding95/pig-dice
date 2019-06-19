@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+}
+
+.btn {
+  width: 80%;
+  text-align: center;
+  align-self: center;
+}
+
+.currentScoreArea {
+  align-items: center;
+  margin-top: 33%;
+}
+
+#gameBoard {
+  width: auto;
+  height: 95vh;
+
+  text-align: center;
+
+}
+
+#player1Card, #player2Card {
+  width: 98%;
+  height: 100px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player1Title, #player2Title {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#diceImage {
+  font-size: 200px;
+  margin-top: 25%;
+}
+
+#dice2, #dice3, #dice4, #dice5, #dice6{
+  display: none;
+}
+
+#player1TitleInactive, #player2TitleActive {
+  display: none;
+}

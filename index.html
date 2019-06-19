@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/dice.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card bg-secondary" id="gameBoard">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card" id="player1Card">
+                  <div class="card-header" id="player1TitleInactive">
+                    <h3>Player 1</h3>
+                    <br>
+                  </div>
+                  <div class="card-header bg-success" id="player1TitleActive">
+                    <h3>Player 1</h3>
+                    <br>
+                    <div id="player1TotalScore"></div>
+                  </div>
+                  <div id="player1TotalScore">0</div>
+
+                </div>
+                <div class="currentScoreArea">
+                  <p>CURRENT SCORE:</p>
+                  <div id="player1CurrentScore"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card" id="player2Card">
+                  <div class="card-header bg-success" id="player2TitleActive">
+                    <h3>Player 2</h3>
+                    <br>
+                    <div id="player2TotalScore"></div>
+                  </div>
+                  <div class="card-header" id="player2TitleInactive">
+                    <h3>Player 2</h3>
+                    <br>
+                  </div>
+                  <div id="player2TotalScore">0</div>
+
+                </div>
+                <div class="currentScoreArea">
+                  <p>CURRENT SCORE:</p>
+                  <div id="player2CurrentScore"></div>
+                </div>
+
+              </div>
+            </div>
+            <div id="diceImage">
+              <span class="dice dice-1" title="Dice 1" id="dice1"></span>
+              <span class="dice dice-2" title="Dice 2" id="dice2"></span>
+              <span class="dice dice-3" title="Dice 3" id="dice3"></span>
+              <span class="dice dice-4" title="Dice 4" id="dice4"></span>
+              <span class="dice dice-5" title="Dice 5" id="dice5"></span>
+              <span class="dice dice-6" title="Dice 6" id="dice6"></span>
+            </div>
+            <button class="btn btn-outline-success" type="button" name="roll" id="rollButton">ROLL!</button>
+            <button class="btn btn-outline-warning" type="button" name="hold" id="holdButton">HOLD!</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
