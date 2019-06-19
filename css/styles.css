@@ -3,9 +3,10 @@ body {
 }
 
 .btn {
-  width: 80%;
+  width: 100%;
   text-align: center;
   align-self: center;
+  box-shadow: 2px 2px 5px black;
 }
 
 .currentScoreArea {
@@ -14,31 +15,32 @@ body {
 }
 
 #gameBoard {
-  width: auto;
-  height: 95vh;
 
+  background: url("https://3dmodelsworld.com/wp-content/uploads/edd/2019/04/pool-table-pbr-3d-model-physically-based-rendering-1.jpg") no-repeat scroll center top transparent;
+  font-family: 'Bungee Inline', cursive;
+  width: auto;
+  height: 75vh;
+  margin-top: 100px;
   text-align: center;
 
 }
 
 #player1Card, #player2Card {
-  color: black;
+  color: #474747;
   width: 98%;
   height: 100px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 2px 2px 4px black;
+  box-shadow: 2px 2px 5px black;
+  color: white;
 }
 
-#player1Title, #player2Title {
-
-  width: 100% !important;
-  height: 100% !important;
-}
 
 #diceImage {
   font-size: 200px;
-  margin-top: 25%;
+  margin-top: ;
 }
 
 #dice2, #dice3, #dice4, #dice5, #dice6{
@@ -47,6 +49,22 @@ body {
 
 #player1TitleInactive, #player2TitleActive {
   display: none;
+  width: 100%;
+
+}
+
+#player1TitleActive, #player2TitleInactive {
+    width: 100%;
+}
+
+#player1TotalScore, #player2TotalScore {
+
+}
+
+#buttonCard {
+  width: 500px;
+  align-self: center;
+  margin-top: 90px;
 }
 
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dice.css"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -13,11 +14,11 @@
       <div class="row">
         <div class="col-lg-12">
 
-          <div class="card bg-secondary" id="gameBoard">
+          <div class="card bg-secondary card-image-overlay" id="gameBoard">
             <div class="row">
               <div class="col-md-6">
-                <div class="card" id="player1Card">
-                  <div class="card-header" id="player1TitleInactive">
+                <div class="card bg-secondary" id="player1Card">
+                  <div class="card-header bg-light" id="player1TitleInactive">
                     <h3>Player 1</h3>
                     <br>
                   </div>
@@ -25,9 +26,9 @@
                     <h3>Player 1</h3>
                     <br>
                   </div>
-                  <div id="player1TotalScore">0</div>
 
                 </div>
+                <div class="card bg-light" id="player1TotalScore">0</div>
                 <div class="currentScoreArea">
                   <p>CURRENT SCORE:</p>
                   <div id="player1CurrentScore"></div>
@@ -35,19 +36,19 @@
               </div>
 
               <div class="col-md-6">
-                <div class="card" id="player2Card">
+                <div class="card bg-secondary" id="player2Card">
                   <div class="card-header bg-success" id="player2TitleActive">
                     <h3>Player 2</h3>
                     <br>
 
                   </div>
-                  <div class="card-header" id="player2TitleInactive">
+                  <div class="card-header bg-light" id="player2TitleInactive">
                     <h3>Player 2</h3>
                     <br>
                   </div>
-                  <div id="player2TotalScore">0</div>
 
                 </div>
+                <div class="card bg-light" id="player2TotalScore">0</div>
                 <div class="currentScoreArea">
                   <p>CURRENT SCORE:</p>
                   <div id="player2CurrentScore"></div>
@@ -64,8 +65,10 @@
               <span class="dice dice-5" title="Dice 5" id="dice5"></span>
               <span class="dice dice-6" title="Dice 6" id="dice6"></span>
             </div>
-            <button class="btn btn-outline-success" type="button" name="roll" id="rollButton">ROLL!</button>
-            <button class="btn btn-outline-warning" type="button" name="hold" id="holdButton">HOLD!</button>
+            <div class="card bg-dark" id="buttonCard">
+              <button class="btn btn-outline-success" type="button" name="roll" id="rollButton">ROLL!</button>
+              <button class="btn btn-outline-warning" type="button" name="hold" id="holdButton">HOLD!</button>
+            </div>
           </div>
 
         </div>

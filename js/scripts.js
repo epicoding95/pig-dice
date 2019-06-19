@@ -13,9 +13,8 @@ $(document).ready(function(){
 // This function shows and hides the correct die rolled.
   function switchDice(currentRollValue){
 
-    $("#dice" + currentRollValue).show();
     $("#dice" + previousRollValue).hide();
-
+    $("#dice" + currentRollValue).show();
   }
 
   function switchPlayer(currentTurnValue){
@@ -27,15 +26,15 @@ $(document).ready(function(){
       activePlayer = 1;
     }
     if (activePlayer === 1){
-      $("#player1TitleActive").slideToggle(500);
-      $("#player1TitleInactive").slideToggle(500);
-      $("#player2TitleActive").slideToggle(500);
-      $("#player2TitleInactive").slideToggle(500);
+      $("#player1TitleActive").toggle();
+      $("#player1TitleInactive").toggle();
+      $("#player2TitleActive").toggle();
+      $("#player2TitleInactive").toggle();
     } else if (activePlayer === 2){
-      $("#player1TitleActive").slideToggle(500);
-      $("#player1TitleInactive").slideToggle(500);
-      $("#player2TitleActive").slideToggle(500);
-      $("#player2TitleInactive").slideToggle(500);
+      $("#player1TitleActive").toggle();
+      $("#player1TitleInactive").toggle();
+      $("#player2TitleActive").toggle();
+      $("#player2TitleInactive").toggle();
     }
     currentTurnTotal = 0;
     $("#player1TotalScore").text(players.player1Total);
